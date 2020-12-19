@@ -1,11 +1,4 @@
 @import "./base/normalize";
-
-body {
-	font-family: "Roboto", sans-serif;
-	background-color: white;
-}
-img {
-	display: block;
-	max-width: 100%;
-	height: auto;
-}
+@import "./base/base";
+@import "./components/gallery";
+@import "./components/task6";

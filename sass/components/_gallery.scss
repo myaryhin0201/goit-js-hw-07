@@ -1,0 +1,17 @@
+ul#gallery {
+	display: flex;
+	flex-wrap: wrap;
+	& li {
+		display: flex;
+		list-style-type: none;
+		width: calc((100% - 30px * 1) / 2);
+		margin-right: 10px;
+		margin-bottom: 10px;
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
+		&:nth-last-child(-n) {
+			margin-bottom: 0;
+		}
+	}
+}

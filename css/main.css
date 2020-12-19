@@ -368,4 +368,56 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+h1 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#counter {
+  text-align: center;
+}
+
+.task5 {
+  text-align: left;
+}
+
+ul#gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+ul#gallery li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  width: calc((100% - 30px * 1) / 2);
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+ul#gallery li:nth-child(2n) {
+  margin-right: 0;
+}
+
+ul#gallery li:nth-last-child(-n) {
+  margin-bottom: 0;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
 /*# sourceMappingURL=main.css.map */
