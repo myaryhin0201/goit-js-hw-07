@@ -1,10 +1,13 @@
+@import "./base/normalize";
+
 body {
 	font-family: "Roboto", sans-serif;
 	background-color: $white-color;
 }
-h1 {
+a {
 	color: blue;
-	&:hover {
+	&:hover,
+	&:focus {
 		color: red;
 	}
 }
