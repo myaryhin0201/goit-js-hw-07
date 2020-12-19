@@ -7,6 +7,7 @@ console.log(`Задание 6`);
 
 const userMessage = document.querySelector('#validation-input');
 const dataLength = userMessage.getAttribute('data-length');
+
 userMessage.addEventListener('change', () => {
     const userMessageLength = userMessage.value.split('').length;
     console.log(userMessageLength);
