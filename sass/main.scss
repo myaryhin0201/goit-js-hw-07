@@ -2,14 +2,7 @@
 
 body {
 	font-family: "Roboto", sans-serif;
-	background-color: $white-color;
-}
-a {
-	color: blue;
-	&:hover,
-	&:focus {
-		color: red;
-	}
+	background-color: white;
 }
 img {
 	display: block;
