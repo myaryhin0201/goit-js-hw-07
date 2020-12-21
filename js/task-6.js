@@ -11,7 +11,9 @@ const dataLength = userMessage.getAttribute('data-length');
 userMessage.addEventListener('change', () => {
     const userMessageLength = userMessage.value.split('').length;
     console.log(userMessageLength);
-    if (Number(dataLength) === Number(userMessageLength)) {
+    const dataNumber = Number(dataLength);
+    const userMessageNumber = Number(userMessageLength);
+    if (dataLengthNumber === userMessageNumber) {
         userMessage.classList.add('valid');
         userMessage.classList.remove('invalid');
     } else {

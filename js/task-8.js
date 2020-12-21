@@ -20,10 +20,10 @@ const boxesPlace = document.querySelector('#boxes');
 const boxSize = 30;
 const randomBetween = (min, max) => min + Math.floor(Math.random() * (max - min + 1));
 const createBoxes = (amount) => {
-    destroyBoxes();
+    boxesPlace.innerHTML = "";
     amount = Number(amount.value);
     const itemRef = [];
-    console.log(amount);
+    console.log("userInput:"+amount);
     for (let i = 0; i < amount;i+=1){
         const element = document.createElement('div');
         const r = randomBetween(0, 255);
@@ -37,8 +37,9 @@ const createBoxes = (amount) => {
     }
     boxesPlace.append(...itemRef);
 }   
-const destroyBoxes = () => {
+const destroyBoxes = function () {
     boxesPlace.innerHTML = "";
+    userInput.value = "";
 }
 render.addEventListener('click', () => { createBoxes(userInput);});
 destroy.addEventListener('click',() =>{ destroyBoxes();});
